@@ -1,27 +1,32 @@
 - name: GitHub
-  url: http://github.com/phlow
+  url: https://github.com/gilardh/dev-website
   class: icon-github
-  title: Code und mehr...
+  title: Source code
 
-- name: YouTube
-  url: http://www.youtube.com/PhlowMedia
-  class: icon-youtube
-  title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
+#- name: YouTube
+#  url: http://www.youtube.com/PhlowMedia
+#  class: icon-youtube
+#  title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
 
 - name: Twitter
-  url: http://twitter.com/phlow
+  url: https://twitter.com/MyHushTeam
   class: icon-twitter
-  title: "Immer das Neuste von Phlow gibt es auf Twitter"
+  title: "Twitter"
 
-- name: Mixcloud
-  url: http://www.mixcloud.com/phlow/
-  class: icon-cloud
-  title: "Mixe, was sonst?"
+- name: Telegram
+  url: https://t.me/Hush_Coin
+  class: icon-paper-plane
+  title: "Telegram"
 
-- name: Phlow YouTube Google+
-  url: https://plus.google.com/u/0/+Phlow
-  class: icon-googleplus
-  title: "YouTube Google+"
+# - name: Mixcloud
+#   url: http://www.mixcloud.com/phlow/
+#   class: icon-cloud
+#   title: "Mixe, was sonst?"
+
+# - name: Phlow YouTube Google+
+#   url: https://plus.google.com/u/0/+Phlow
+#   class: icon-googleplus
+#   title: "YouTube Google+"
 
 # - name: Facebook
 #   url: http://www.facebook.com/

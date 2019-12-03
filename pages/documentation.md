@@ -35,7 +35,7 @@ The [page/post format]({{ site.url }}{{ site.baseurl }}/design/page/) has no sid
 
 use in front matter via: `layout: page`
 
-### Page/Post with a left or right sidebar
+#### Page/Post with a left or right sidebar
 If you want to show the sidebar, just enter `sidebar: left` or `sidebar: right` in front matter, and *whoops, there it is*! To customize the content of the sidebar, open `_includes/sidebar`.
 
 
