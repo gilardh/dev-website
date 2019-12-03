@@ -66,10 +66,14 @@
   - title: "Blog Archive"
     url: "/blog/archive/"
 
-- title: "Search"
-  url: "/search/"
-  side: right
-
 - title: "Contact"
   url: "/contact/"
+  side: left
+
+- title: "Search"
+  url: "/search/"
+  side: left
+
+- title: "Developers"
+  url: "/developers/"
   side: right
