@@ -67,3 +67,7 @@ Click the image to [watch the YouTube-Video-Tutorial][4].
  [8]: http://phlow.github.io/simplicity/
  [9]: #
  [10]: #
+
+
+
+Created with &hearts; by <a href="http://phlow.de/">Phlow</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>
