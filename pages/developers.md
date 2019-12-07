@@ -20,8 +20,6 @@ header: no
 
 ## Start Here   {#edit-navigation}
 
-To customize the navigation of *Feeling Responsive*, you have to open the [YAML](https://jekyllrb.com/docs/datafiles/)-file `_data/navigation.yml`. Edit the data and adjust it to your own needs.
-
 ## About Komodo Platform   {#formats}
 
 ### Plateform Overview
