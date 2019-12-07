@@ -4,9 +4,7 @@ title: "Documentation"
 subheadline: "Documentation for developers"
 teaser: "The documentation for developers"
 permalink: "/developers/"
-header:
-    title: Developpers
-    image_fullwidth: unsplash_brooklyn-bridge_header.jpg
+header: no
 ---
 <div class="row">
 <div class="medium-4 medium-push-8 columns" markdown="1">
