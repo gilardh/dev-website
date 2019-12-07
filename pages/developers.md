@@ -18,8 +18,6 @@ header: no
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
-## Start Here   {#edit-navigation}
-
 ## About Komodo Platform   {#formats}
 
 ### Plateform Overview
