@@ -18,354 +18,525 @@ header: no
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
-## About Komodo Platform   {#formats}
+# komodo-cli   {#formats}
+**komodo-cli height**
 
-### Plateform Overview
+Usage:
+  komodo-cli [options] <command> [params]  Send command to Komodo
+  komodo-cli [options] help                List commands
+  komodo-cli [options] help <command>      Get help for a command
 
-**Komodo Platform Overview**
+## -?
+       This help message
 
-After years of innovation and development, Komodo's multi-chain architecture overcomes the challenges faced by other smart-contract platforms.
+## -conf=<file>
+       Specify configuration file (default: komodo.conf)
 
-The philosophy behind Komodo's multi-chain architecture relies on four pillars.
+## -datadir=<dir>
+       Specify data directory
 
-- Security
-- Scalability
-- Interoperability
-- Adaptability
+## -testnet
+       Use the test network
 
-With these four pillars in place, users of all types will find powerful, customizable solutions that will set your blockchain creativity free.
+## -regtest
+       Enter regression test mode, which uses a special chain in which blocks
+       can be solved instantly. This is intended for regression testing tools
+       and app development.
 
-**Security**
-**Enjoy the Protection of the Bitcoin Hash Rate**
-Secure your project with the power of the Bitcoin network via Komodo’s delayed proof of work security mechanism. Don’t waste time worrying about attackers.
+## -rpcconnect=<ip>
+       Send commands to node running on <ip> (default: 127.0.0.1)
 
-- Approximately every half hour, a hash of the developers blockchain is notarized to Bitcoin
-- All transactions included in the hash are considered to have achieved finality
-- For the consensus mechanism, arbitrarily choose between a mixture of Proof-of-Work and Proof-of-Stake
+## -rpcport=<port>
+       Connect to JSON-RPC on <port> (default: 8232 or testnet: 18232)
 
-**Scalability**
-**Have a Blockchain All To Yourself. Want More Than One? No Problem.**
-Developers and their users have a full Smart Chain all to themselves, and can combine any number of Smart Chains together into one cluster.
+## -rpcwait
+       Wait for RPC server to start
 
-- Developers and their users can securely own a full Smart Chain
-- Each Smart Chain is completely autonomous
-- If your project grows beyond the capacity of a single chain, simply add more
-- Scale your maximum transaction-per-second throughput into the millions, if desired
-- No gas fees. All transaction fees are paid in your Smart Chain’s coin
+## -rpcuser=<user>
+       Username for JSON-RPC connections
 
-**Interoperability**
-**Link Your Smart Chain to Other Chains**
-Your project is interoperable with all others in the Komodo ecosystem, plus connected with over 99% of coins and tokens through Komodo’s industry-leading atomic-swap technology.
+## -rpcpassword=<pw>
+       Password for JSON-RPC connections
 
-- Komodo’s Multi-Chain Syncing feature allows you to scale out linearly on demand
-- Smart Chains can verify and update local state based on the activity of compatible Smart Chains
-- Transfer assets and tokens between compatible Smart Chains
-- Use Komodo's atomic-swap DEX software to trade your Smart Chain assets with Non-Smart assets.
+## -rpcclienttimeout=<n>
+       Timeout in seconds during HTTP requests, or 0 for no timeout. (default:
+       900)
 
-**Adaptability**
-**Develop Your Smart Chain at Will**
-Adapt your blockchain to create a purpose-built solution that fits your individual needs. Receive all new features developed by Komodo to ensure your project is future-proofed.
+## -stdin
+       Read extra arguments from standard input, one per line until EOF/Ctrl-D
+       (recommended for sensitive information such as passphrases)
 
-- Twenty-four different launch parameters are available to customize the functionality of your Smart Chain
-- Rely on the Antara framework to fully customize your Smart Chain with unique and arbitrary code within the consensus mechanism
-- Share and adopt code in Komodo's open-source community
-- Dispose of Smart Chains that become data-weight heavy, or transfer them to fresh Smart Chains for ease of use
-- No need for a virtual machine (VM) nor a VM-based programming language
+# komodod   {#formats}
+**komodod height**
 
-**Together, the Komodo Platform is Unlike Anything Else**
-With the Komodo architecture at your command, you are prepared to lift your Smart Chain software to levels never before seen in the blockchain industry.
+Usage:
+  komodod [options]                     Start Hush-flavored Komodo Daemon
 
-**Komodo's White-Label Software Brings Your Innovation to Market Faster**
-The Komodo Platform offers many free white-label applications that can help you bring your innovation to market faster.
+## -Options:
 
-- Atomic-Swap Decentralized Exchange & Multi-Asset Wallet
-- Decentralized-Crowdfunding App
-- Custom Block Explorers
-- SPV Electrum Server Integration
-- Core Antara Modules
+### -?
+       This help message
 
-**Installing, Using, and Testing Komodo Software is Free**
-The best way to learn about Komodo is to use it for yourself.
+### -alerts
+       Receive and display P2P network alerts (default: 1)
 
-### Product Introductions
+### -alertnotify=<cmd>
+       Execute command when a relevant alert is received or we see a really
+       long fork (%s in cmd is replaced by message)
 
-### Doc Orientation
+### -blocknotify=<cmd>
+       Execute command when the best block changes (%s in cmd is replaced by
+       block hash)
 
-### Simple Installations
+### -checkblocks=<n>
+       How many blocks to check at startup (default: 288, 0 = all)
 
-## Learning Launchpad   {#formats2}
+### -checklevel=<n>
+       How thorough the block verification of -checkblocks is (0-4, default: 3)
 
+### -clientname=<SomeName>
+       Full node client name, default 'MagicBean'
 
-### Learning Path Outline
+### -conf=<file>
+       Specify configuration file (default: komodo.conf)
 
-### Common Terminology and Concepts
+### -datadir=<dir>
+       Specify data directory
 
-## Core Technology Discussions   {#formats2}
+### -exportdir=<dir>
+       Specify directory to be used when exporting data
 
-### Introduction
+### -dbcache=<n>
+       Set database cache size in megabytes (4 to 16384, default: 450)
 
-### Delayed Proof of Work
+### -loadblock=<file>
+       Imports blocks from external blk000??.dat file on startup
 
-### Creating and Distrbuting a New Komodo Smart Chain
+### -maxorphantx=<n>
+       Keep at most <n> unconnectable transactions in memory (default: 100)
 
-### The Antara Framework
+### -mempooltxinputlimit=<n>
+       [DEPRECATED FROM OVERWINTER] Set the maximum number of transparent
+       inputs in a transaction that the mempool will accept (default: 0 = no
+       limit applied)
 
-### AtomicDEX and Atomic Swaps
+### -par=<n>
+       Set the number of script verification threads (-4 to 16, 0 = auto, <0 =
+       leave that many cores free, default: 0)
 
-### Miscellanous
+### -prune=<n>
+       Reduce storage requirements by pruning (deleting) old blocks. This mode
+       disables wallet support and is incompatible with -txindex. Warning:
+       Reverting this setting requires re-downloading the entire blockchain.
+       (default: 0 = disable pruning blocks, >550 = target size in MiB to use
+       for block files)
 
-### References
+### -reindex
+       Rebuild block chain index from current blk000??.dat files on startup
 
-# Smart Chain Essentials   {#formats3}
+### -txindex
+       Maintain a full transaction index, used by the getrawtransaction rpc
+       call (default: 0)
 
-## Introduction to Smart Chain Documentation
+### -addressindex
+       Maintain a full address index, used to query for the balance, txids and
+       unspent outputs for addresses (default: 0)
 
-## Smart Chain Setup
+### -timestampindex
+       Maintain a timestamp index for block hashes, used to query blocks hashes
+       by a range of timestamps (default: 0)
 
-### Installing Smart Chain Software From Source Code
+### -spentindex
+       Maintain a full spent index, used to query the spending txid and input
+       index for an outpoint (default: 0)
 
-### Updating Smart Chain Sogtware From Source Code
+### -zindex
+       Maintain extra statistics about shielded transactions and payments
+       (default: 0)
 
-### Interacting with Smart Chains
+## -Connection options:
 
-### Ecosytem Smart Chain Launch
+### -addnode=<ip>
+       Add a node to connect to and attempt to keep the connection open
 
-### Smart Chain Maintenance
+### -banscore=<n>
+       Threshold for disconnecting misbehaving peers (default: 100)
 
-### Common Runtime Parameters
+### -bantime=<n>
+       Number of seconds to keep misbehaving peers from reconnecting (default:
+       86400)
 
-### nSPV (Enhanced Lite Mode)
+### -bind=<addr>
+       Bind to given address and always listen on it. Use [host]:port notation
+       for IPv6
 
-## Smart Chain Tutorials
+### -connect=<ip>
+       Connect only to the specified node(s)
 
-### Introduction to Smart Chain Tutorials
+### -discover
+       Discover own IP addresses (default: 1 when listening and no -externalip
+       or -proxy)
 
-### Basic Environmetn Steup for Linux VPS
+### -dns
+       Allow DNS lookups for -addnode, -seednode and -connect (default: 1)
 
-### Create a Defaut Smart Chain
+### -dnsseed
+       Query for peer addresses via DNS lookup, if low on addresses (default: 1
+       unless -connect)
 
-### Creating a Smart Chain on a Single Node
+### -externalip=<ip>
+       Specify your own public address
 
-### Running Komodo Software in Debug Mode
+### -forcednsseed
+       Always query for peer addresses via DNS lookup (default: 0)
 
-### Multisignature Trasaction Creation and Walkthrough
+### -listen
+       Accept connections from outside (default: 1 if no -proxy or -connect)
 
-### Smart Chain API Basics
+### -listenonion
+       Automatically create Tor hidden service (default: 1)
 
+### -maxconnections=<n>
+       Maintain at most <n> connections to peers (default: 384)
 
-## Smart Chain API   {#styling}
+### -maxreceivebuffer=<n>
+       Maximum per-connection receive buffer, <n>*1000 bytes (default: 5000)
 
-### Address
+### -maxsendbuffer=<n>
+       Maximum per-connection send buffer, <n>*1000 bytes (default: 1000)
 
-### Blockchain
+### -onion=<ip:port>
+       Use separate SOCKS5 proxy to reach peers via Tor hidden services
+       (default: -proxy)
 
-### CC Lib
+### -onlynet=<net>
+       Only connect to nodes in network <net> (ipv4, ipv6 or onion)
 
-### Control
+### -permitbaremultisig
+       Relay non-P2SH multisig (default: 1)
 
-### Cross-Chain API
+### -peerbloomfilters
+       Support filtering of blocks and transaction with Bloom filters (default:
+       1)
 
-### Disclosure
+### -port=<port>
+       Listen for connections on <port> (default: 7770 or testnet: 17770)
 
-### Generate
+### -proxy=<ip:port>
+       Connect through SOCKS5 proxy
 
-### Mining
+### -proxyrandomize
+       Randomize credentials for every proxy connection. This enables Tor
+       stream isolation (default: 1)
 
-### Jumblr
+### -seednode=<ip>
+       Connect to a node to retrieve peer addresses, and disconnect
 
-### Network
+### -timeout=<n>
+       Specify connection timeout in milliseconds (minimum: 1, default: 5000)
 
-### Raw Transactions
+### -torcontrol=<ip>:<port>
+       Tor control port to use if onion listening enabled (default:
+       127.0.0.1:9051)
 
-### Util
+### -torpassword=<pass>
+       Tor control port password (default: empty)
 
-### Wallet
+### -whitebind=<addr>
+       Bind to given address and whitelist peers connecting to it. Use
+       [host]:port notation for IPv6
 
+### -whitelist=<netmask>
+       Whitelist peers connecting from the given netmask or IP address. Can be
+       specified multiple times. Whitelisted peers cannot be DoS banned and
+       their transactions are always relayed, even if they are already in the
+       mempool, useful e.g. for a gateway
+## -Wallet options:
 
+### -disablewallet
+       Do not load the wallet and disable wallet RPC calls
 
-# Antara Framework
+### -keypool=<n>
+       Set key pool size to <n> (default: 100)
 
+### -paytxfee=<amt>
+       Fee (in KMD/kB) to add to transactions you send (default: 0.00)
 
-## Introduction to Antara Documentation
+### -rescan
+       Rescan the block chain for missing wallet transactions on startup
 
+### -salvagewallet
+       Attempt to recover private keys from a corrupt wallet.dat on startup
 
-## Antara Customizations
+### -sendfreetransactions
+       Send transactions as zero-fee transactions if possible (default: 0)
 
+### -spendzeroconfchange
+       Spend unconfirmed change when sending transactions (default: 1)
 
-## Antara Tutorials
+### -txconfirmtarget=<n>
+       If paytxfee is not set, include enough fee so transactions begin
+       confirmation on average within n blocks (default: 2)
 
-### Introduction to Antara Tutorials
+### -txexpirydelta
+       Set the number of blocks after which a transaction that has not been
+       mined will become invalid (default: 200)
 
-### Understanding Antara Addresses
+### -maxtxfee=<amt>
+       Maximum total fees (in KMD) to use in a single wallet transaction;
+       setting this too low may abort large transactions (default: 0.10)
 
-### Overview of Antara Modules - Part 1
+### -upgradewallet
+       Upgrade wallet to latest format on startup
 
-### Overview of Antara Modules - Part 2
+### -wallet=<file>
+       Specify wallet file (within data directory) (default: wallet.dat)
 
-### Beginner Series - Preparation
+### -walletbroadcast
+       Make the wallet broadcast transactions (default: 1)
 
-### Beginner Series - Create a Blockchain
+### -walletnotify=<cmd>
+       Execute command when a wallet transaction changes (%s in cmd is replaced
+       by TxID)
 
-### Beginner Series - Using a Faucet
+### -whitelistaddress=<Raddress>
+       Enable the wallet filter for notary nodes and add one Raddress to the
+       whitelist of the wallet filter. If -whitelistaddress= is used, then the
+       wallet filter is automatically activated. Several Raddresses can be
+       defined using several -whitelistaddress= (similar to -addnode). The
+       wallet filter will filter the utxo to only ones coming from my own
+       Raddress (derived from pubkey) and each Raddress defined using
+       -whitelistaddress= this option is mostly for Notary Nodes).
 
-### Beginner Series - Connecting to another Programming Environment
+### -zapwallettxes=<mode>
+       Delete all wallet transactions and only recover those parts of the
+       blockchain through -rescan on startup (1 = keep tx meta data e.g.
+       account owner and payment request information, 2 = drop tx meta data)
 
-### Beginner Series - Understanding Tokens
+## -ZeroMQ notification options:
 
-### Advanced Series - Introduction
+### -zmqpubhashblock=<address>
+       Enable publish hash block in <address>
 
-### Advanced Series - Smart Chain Development Basics
+### -zmqpubhashtx=<address>
+       Enable publish hash transaction in <address>
 
-### Advanced Series - Antara Module Development Basics 
+### -zmqpubrawblock=<address>
+       Enable publish raw block in <address>
 
-### Advanced Series - Preparing for Heir Development
+### -zmqpubrawtx=<address>
+       Enable publish raw transaction in <address>
+## -Debugging/Testing options:
 
-### Advanced Series - Final Conceptual Discussion
+### -debug=<category>
+       Output debugging information (default: 0, supplying <category> is
+       optional). If <category> is not supplied or if <category> = 1, output
+       all debugging information. <category> can be: addrman, alert, bench,
+       coindb, db, estimatefee, http, libevent, lock, mempool, net,
+       partitioncheck, pow, proxy, prune, rand, reindex, rpc, selectcoins, tor,
+       zmq, zrpc, zrpcunsafe (implies zrpc).
 
-### Advanced Series - Developing the Heir Module Prototype
+### -experimentalfeatures
+       Enable use of experimental features
 
-### Advanced Series - Miscellaneous
+### -help-debug
+       Show all debugging options (usage: --help -help-debug)
 
-### Module Tutorial - Dilithium
+### -logips
+       Include IP addresses in debug output (default: 0)
 
-### Module Tutorial - Gateways
+### -logtimestamps
+       Prepend debug output with timestamp (default: 1)
 
-### Module Tutorial - Musig
+### -minrelaytxfee=<amt>
+       Fees (in KMD/kB) smaller than this are considered zero fee for relaying
+       (default: 0.000001)
 
-### Module Tutorial - Rogue
+### -printtoconsole
+       Send trace/debug info to console instead of debug.log file
 
-### Module Tutorial - Pegs | User
+### -shrinkdebugfile
+       Shrink debug.log file on client startup (default: 1 when no -debug)
 
-### Module Tutorial - Pegs |Creator
+### -testnet
+       Use the test network
 
-## Antara Modules
+## -Node relay options:
 
-### Assets
+### -datacarrier
+       Relay and mine data carrier transactions (default: 1)
 
-### Channels
+### -datacarriersize
+       Maximum size of data in data carrier transactions we relay and mine
+       (default: 8192)
 
-### Dilithium
+## -Block creation options:
 
-### Faucet
+### -blockminsize=<n>
+       Set minimum block size in bytes (default: 0)
 
-### Gateways
+### -blockmaxsize=<n>
+       Set maximum block size in bytes (default: 2000000)
 
-### Heir
+### -blockprioritysize=<n>
+       Set maximum size of high-priority/low-fee transactions in bytes
+       (default: 1000000)
 
-### Musig
+## -Mining options:
 
-### Oracles
+### -mint
+       Mint/stake coins automatically (default: 0)
 
-### Payments
+### -gen
+       Mine/generate coins (default: 0)
 
-### Pegs
+### -genproclimit=<n>
+       Set the number of threads for coin mining if enabled (-1 = all cores,
+       default: 0)
 
-### Rewards
+### -equihashsolver=<name>
+       Specify the Equihash solver to be used if enabled (default: "default")
 
-### Rogue
+### -mineraddress=<addr>
+       Send mined coins to a specific single address
 
-### Sudoku
+### -minetolocalwallet
+       Require that mined blocks use a coinbase address in the local wallet
+       (default: 1)
 
-### Tokens
+## -RPC server options:
 
-# AtomicDEX
+### -server
+       Accept command line and JSON-RPC commands
 
+### -rest
+       Accept public REST requests (default: 0)
 
-## Introduction to AtomicDEX Documentation
+### -rpcbind=<addr>
+       Bind to given address to listen for JSON-RPC connections. Use
+       [host]:port notation for IPv6. This option can be specified multiple
+       times (default: bind to all interfaces)
 
+### -rpcuser=<user>
+       Username for JSON-RPC connections
 
-## AtomicDEX Setup
+### -rpcpassword=<pw>
+       Password for JSON-RPC connections
 
-### Installing AtomicDEX Software (MM2)
+### -rpcport=<port>
+       Listen for JSON-RPC connections on <port> (default: 7771 or testnet:
+       17771)
 
+### -rpcallowip=<ip>
+       Allow JSON-RPC connections from specified source. Valid for <ip> are a
+       single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0)
+       or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified
+       multiple times
 
-## AtomicDEX Tutorials
+### -rpcthreads=<n>
+       Set the number of threads to service RPC calls (default: 4)
 
-### Introduction to AtomicDEX
+## -Metrics Options (only if -daemon and -printtoconsole are not set):
 
-### AtomicDEX Walkthrough
+### -showmetrics
+       Show metrics on stdout (default: 1 if running in a console, 0 otherwise)
 
-### How to Become a Liquity Provider
+### -metricsui
+       Set to 1 for a persistent metrics screen, 0 for sequential metrics
+       output (default: 1 if running in a console, 0 otherwise)
 
-### Additional Informaton About AtomicDEX
+### -metricsrefreshtime
+       Number of seconds between metrics refreshes (default: 1 if running in a
+       console, 600 otherwise)
 
-## AtomicDEX Beta
+## -Komodo Asset Chain options:
 
-### Create a New Wallet using AtomicDEX Mobile
+### -ac_algo
+       Choose PoW mining algorithm, default is Equihash
 
-### RestoreWAllet using AtomicDEX Mobile
+### -ac_blocktime
+       Block time in seconds, default is 60
 
-### Add and Activate Coins on AtomicDEX Mobile
+### -ac_cc
+       Cryptoconditions, default 0
 
-### View Your ReceivingAddress to Send Funds for Trading
+### -ac_beam
+       BEAM integration
 
-### Withdraw or Send Funds Using AtomicDEX Mobile
+### -ac_coda
+       CODA integration
 
-### Perform Cross-Chain Atomic Swaps Using AtomicDEX Mobile
+### -ac_cclib
+       Cryptoconditions dynamicly loadable library
 
-### View Ongoing Orgers and Swaps Using AtomicDEX Mobile
+### -ac_ccenable
+       Cryptoconditions to enable
 
-### Recover Seed on AtomicDEX Mobile
+### -ac_ccactivate
+       Block height to enable Cryptoconditions
 
-### Delete Seed (Wallet) on AtomicDEX Mobile
+### -ac_decay
+       Percentage of block reward decrease at each halving
 
-## AtomicDEX API
+### -ac_end
+       Block height at which block rewards will end
 
-### Note About Rational Number Type
+### -ac_eras
+       Block reward eras
 
-### buy
+### -ac_founders
+       Number of blocks between founders reward payouts
 
-### cancel_all_orders
+### -ac_halving
+       Number of blocks between each block reward halving
 
-### cancel_order
+### -ac_name
+       Name of asset chain
 
-### coins_needed_for_kick_start
+### -ac_notarypay
+       Pay notaries, default 0
 
-### disable_coin
+### -ac_perc
+       Percentage of block rewards paid to the founder
 
-### electrum
+### -ac_private
+       Shielded transactions only (except coinbase + notaries), default is 0
 
-### enable
+### -ac_pubkey
+       Public key for receiving payments on the network
 
-### get_enabled_coins
+### -ac_public
+       Transparent transactions only, default 0
 
-### get_trade_fee
+### -ac_reward
+       Block reward in satoshis, default is 0
 
-### help
+### -ac_sapling
+       Sapling activation block height
 
-### import_swaps
+### -ac_script
+       P2SH/multisig address to receive founders rewards
 
-### my_balance
+### -ac_staked
+       Percentage of blocks that are Proof-Of-Stake, default 0
 
-### my_orders
+### -ac_supply
+       Starting supply, default is 0
 
-### my_recent_swaps
+### -ac_timelockfrom
+       Timelocked coinbase start height
 
-### my_swap_status
+### -ac_timelockgte
+       Timelocked coinbase minimum amount to be locked
 
-### my_tx_history
+### -ac_timelockto
+       Timelocked coinbase stop height
 
-### order_status
+### -ac_txpow
+       Enforce transaction-rate limit, default 0
 
-### order_status
-
-### orderbook
-
-### recover_funds_of_swap
-
-### sell
-
-### send_raw_transaction
-
-### setprice
-
-### set_required_confirmations
-
-### stop
-
-### version
-
-### withdraw
+### -ac_veruspos
+       Use Verus Proof-Of-Stake (-ac_veruspos=50) default 0
 
 
 
