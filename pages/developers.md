@@ -23,7 +23,9 @@ header: no
 
 Usage:
   komodo-cli [options] <command> [params]  Send command to Komodo
+
   komodo-cli [options] help                List commands
+  
   komodo-cli [options] help <command>      Get help for a command
 
 ## Options:
@@ -34,7 +36,7 @@ Usage:
 ### -conf=<file>
        Specify configuration file (default: komodo.conf)
 
-### -datadir='<dir>
+### -datadir=<dir>
        Specify data directory
  
 ### -testnet
@@ -68,8 +70,8 @@ Usage:
        Read extra arguments from standard input, one per line until EOF/Ctrl-D
        (recommended for sensitive information such as passphrases)
 
-# komodod   {#formats}
-**komodod height**
+# komodod   {#formats_d}
+-------------------------
 
 Usage:
   komodod [options]                     Start Hush-flavored Komodo Daemon
