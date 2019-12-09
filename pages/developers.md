@@ -19,7 +19,7 @@ header: no
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
 # komodo-cli   {#formats}
-**komodo-cli height**
+-------------------------
 
 Usage:
   komodo-cli [options] <command> [params]  Send command to Komodo
@@ -34,9 +34,9 @@ Usage:
 ### -conf=<file>
        Specify configuration file (default: komodo.conf)
 
-### -datadir=<dir>
+### -datadir='<dir>
        Specify data directory
-
+ 
 ### -testnet
        Use the test network
 
