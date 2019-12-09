@@ -26,43 +26,45 @@ Usage:
   komodo-cli [options] help                List commands
   komodo-cli [options] help <command>      Get help for a command
 
-## -?
+## Options:
+
+### -?
        This help message
 
-## -conf=<file>
+### -conf=<file>
        Specify configuration file (default: komodo.conf)
 
-## -datadir=<dir>
+### -datadir=<dir>
        Specify data directory
 
-## -testnet
+### -testnet
        Use the test network
 
-## -regtest
+### -regtest
        Enter regression test mode, which uses a special chain in which blocks
        can be solved instantly. This is intended for regression testing tools
        and app development.
 
-## -rpcconnect=<ip>
+### -rpcconnect=<ip>
        Send commands to node running on <ip> (default: 127.0.0.1)
 
-## -rpcport=<port>
+### -rpcport=<port>
        Connect to JSON-RPC on <port> (default: 8232 or testnet: 18232)
 
-## -rpcwait
+### -rpcwait
        Wait for RPC server to start
 
-## -rpcuser=<user>
+### -rpcuser=<user>
        Username for JSON-RPC connections
 
-## -rpcpassword=<pw>
+### -rpcpassword=<pw>
        Password for JSON-RPC connections
 
-## -rpcclienttimeout=<n>
+### -rpcclienttimeout=<n>
        Timeout in seconds during HTTP requests, or 0 for no timeout. (default:
        900)
 
-## -stdin
+### -stdin
        Read extra arguments from standard input, one per line until EOF/Ctrl-D
        (recommended for sensitive information such as passphrases)
 
@@ -72,7 +74,7 @@ Usage:
 Usage:
   komodod [options]                     Start Hush-flavored Komodo Daemon
 
-## -Options:
+## Options:
 
 ### -?
        This help message
@@ -154,7 +156,7 @@ Usage:
        Maintain extra statistics about shielded transactions and payments
        (default: 0)
 
-## -Connection options:
+## Connection options:
 
 ### -addnode=<ip>
        Add a node to connect to and attempt to keep the connection open
@@ -251,7 +253,7 @@ Usage:
        specified multiple times. Whitelisted peers cannot be DoS banned and
        their transactions are always relayed, even if they are already in the
        mempool, useful e.g. for a gateway
-## -Wallet options:
+## Wallet options:
 
 ### -disablewallet
        Do not load the wallet and disable wallet RPC calls
@@ -326,7 +328,7 @@ Usage:
 
 ### -zmqpubrawtx=<address>
        Enable publish raw transaction in <address>
-## -Debugging/Testing options:
+## Debugging/Testing options:
 
 ### -debug=<category>
        Output debugging information (default: 0, supplying <category> is
@@ -361,7 +363,7 @@ Usage:
 ### -testnet
        Use the test network
 
-## -Node relay options:
+## Node relay options:
 
 ### -datacarrier
        Relay and mine data carrier transactions (default: 1)
@@ -370,7 +372,7 @@ Usage:
        Maximum size of data in data carrier transactions we relay and mine
        (default: 8192)
 
-## -Block creation options:
+## Block creation options:
 
 ### -blockminsize=<n>
        Set minimum block size in bytes (default: 0)
@@ -382,7 +384,7 @@ Usage:
        Set maximum size of high-priority/low-fee transactions in bytes
        (default: 1000000)
 
-## -Mining options:
+## Mining options:
 
 ### -mint
        Mint/stake coins automatically (default: 0)
@@ -404,7 +406,7 @@ Usage:
        Require that mined blocks use a coinbase address in the local wallet
        (default: 1)
 
-## -RPC server options:
+## RPC server options:
 
 ### -server
        Accept command line and JSON-RPC commands
@@ -436,7 +438,7 @@ Usage:
 ### -rpcthreads=<n>
        Set the number of threads to service RPC calls (default: 4)
 
-## -Metrics Options (only if -daemon and -printtoconsole are not set):
+## Metrics Options (only if -daemon and -printtoconsole are not set):
 
 ### -showmetrics
        Show metrics on stdout (default: 1 if running in a console, 0 otherwise)
@@ -449,7 +451,7 @@ Usage:
        Number of seconds between metrics refreshes (default: 1 if running in a
        console, 600 otherwise)
 
-## -Komodo Asset Chain options:
+## Komodo Asset Chain options:
 
 ### -ac_algo
        Choose PoW mining algorithm, default is Equihash
