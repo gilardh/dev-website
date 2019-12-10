@@ -31,10 +31,10 @@ Usage:
 ### -?
        This help message
 
-### -conf=``<file>``
+### -conf=*file*
        Specify configuration file (default: hush3.conf)
 
-### -datadir=<dir>
+### -datadir=*dir*
        Specify data directory
  
 ### -testnet
@@ -67,11 +67,12 @@ Usage:
 ### -stdin
        Read extra arguments from standard input, one per line until EOF/Ctrl-D
        (recommended for sensitive information such as passphrases)
-
+  
+    
 # hushd   {#formats_d}
 -------------------------
-
-Usage:
+  
+Usage:  
   hushd [options]                     Start Hush-flavored Komodo Daemon  
 
 ## Options:
