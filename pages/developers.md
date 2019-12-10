@@ -18,15 +18,13 @@ header: no
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
-# komodo-cli   {#formats}
+# hush-cli   {#formats}
 -------------------------
 
 Usage:
-  komodo-cli [options] <command> [params]  Send command to Komodo
-
-  komodo-cli [options] help                List commands
-  
-  komodo-cli [options] help <command>      Get help for a command
+  hush-cli [options] <command> [params]  Send command to Hush  
+  hush-cli [options] help                List commands  
+  hush-cli [options] help <command>      Get help for a command   
 
 ## Options:
 
@@ -34,7 +32,7 @@ Usage:
        This help message
 
 ### -conf=<file>
-       Specify configuration file (default: komodo.conf)
+       Specify configuration file (default: hush3.conf)
 
 ### -datadir=<dir>
        Specify data directory
@@ -70,11 +68,11 @@ Usage:
        Read extra arguments from standard input, one per line until EOF/Ctrl-D
        (recommended for sensitive information such as passphrases)
 
-# komodod   {#formats_d}
+# hushd   {#formats_d}
 -------------------------
 
 Usage:
-  komodod [options]                     Start Hush-flavored Komodo Daemon
+  hushd [options]                     Start Hush-flavored Komodo Daemon  
 
 ## Options:
 
@@ -538,9 +536,6 @@ Usage:
 
 ### -ac_txpow
        Enforce transaction-rate limit, default 0
-
-### -ac_veruspos
-       Use Verus Proof-Of-Stake (-ac_veruspos=50) default 0
 
 
 
