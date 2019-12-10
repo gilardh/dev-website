@@ -31,7 +31,7 @@ Usage:
 ### -?
        This help message
 
-###      -conf=<file>
+### ``-conf=<file>``
        Specify configuration file (default: hush3.conf)
 
 ### -datadir=<dir>
