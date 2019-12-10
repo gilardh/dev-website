@@ -21,7 +21,7 @@ header: no
 # hush-cli   {#formats}
 -------------------------
 
-Usage:
+Usage:  
   hush-cli [options] <command> [params]  Send command to Hush  
   hush-cli [options] help                List commands  
   hush-cli [options] help <command>      Get help for a command   
@@ -31,7 +31,7 @@ Usage:
 ### -?
        This help message
 
-### -conf=<file>
+###      -conf=<file>
        Specify configuration file (default: hush3.conf)
 
 ### -datadir=<dir>
