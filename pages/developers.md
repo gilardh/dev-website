@@ -452,7 +452,7 @@ Usage:
        Number of seconds between metrics refreshes (default: 1 if running in a
        console, 600 otherwise)
 
-## Komodo Asset Chain options:
+## Hush Smart Chain options:
 
 ### -ac_algo
        Choose PoW mining algorithm, default is Equihash
