@@ -84,9 +84,8 @@ This help message
 send send send
 ```
 {: title="Send"}
-```
+```json
 received received received
-}
 ```
 {: title="Receive"}
 
