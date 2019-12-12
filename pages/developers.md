@@ -78,7 +78,17 @@ Usage:
 ## Options:
 
 ### -?
-       This help message
+This help message
+
+```
+send send send
+```
+{: title="Send"}
+```
+received received received
+}
+```
+{: title="Receive"}
 
 ### -alerts
        Receive and display P2P network alerts (default: 1)
