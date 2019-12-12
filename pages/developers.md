@@ -29,10 +29,10 @@ Usage:
 ## Options:
 
 ### -?
-       This help message
+This help message
 
 ### -conf=*file*
-       Specify configuration file (default: hush3.conf)
+Specify configuration file (default: hush3.conf)
 
 ### -datadir=*dir*
        Specify data directory
