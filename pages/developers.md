@@ -35,38 +35,34 @@ This help message
 Specify configuration file (default: hush3.conf)
 
 ### -datadir=*dir*
-       Specify data directory
+Specify data directory
  
 ### -testnet
-       Use the test network
+Use the test network
 
 ### -regtest
-       Enter regression test mode, which uses a special chain in which blocks
-       can be solved instantly. This is intended for regression testing tools
-       and app development.
+Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.
 
 ### -rpcconnect=*ip*
-       Send commands to node running on <ip> (default: 127.0.0.1)
+Send commands to node running on <ip> (default: 127.0.0.1)
 
 ### -rpcport=*port*
-       Connect to JSON-RPC on <port> (default: 8232 or testnet: 18232)
+Connect to JSON-RPC on <port> (default: 8232 or testnet: 18232)
 
 ### -rpcwait
-       Wait for RPC server to start
+Wait for RPC server to start
 
 ### -rpcuser=*user*
-       Username for JSON-RPC connections
+Username for JSON-RPC connections
 
 ### -rpcpassword=*pw*
-       Password for JSON-RPC connections
+Password for JSON-RPC connections
 
 ### -rpcclienttimeout=*n*
-       Timeout in seconds during HTTP requests, or 0 for no timeout. (default:
-       900)
+Timeout in seconds during HTTP requests, or 0 for no timeout. (default:       900)
 
 ### -stdin
-       Read extra arguments from standard input, one per line until EOF/Ctrl-D
-       (recommended for sensitive information such as passphrases)
+Read extra arguments from standard input, one per line until EOF/Ctrl-D (recommended for sensitive information such as passphrases)
   
     
 # hushd   {#formats_d}
@@ -78,16 +74,7 @@ Usage:
 ## Options:
 
 ### -?
-This help message
-
-```
-send send send
-```
-{: title="Send"}
-```json
-received received received
-```
-{: title="Receive"}
+Show help message
 
 ### -alerts
 Receive and display P2P network alerts (default: 1)
