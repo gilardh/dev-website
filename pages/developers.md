@@ -338,9 +338,6 @@ Set maximum size of high-priority/low-fee transactions in bytes (default: 100000
 
 ## Mining options:
 
-### -mint
-Mint/stake coins automatically (default: 0)
-
 ### -gen
 Mine/generate coins (default: 0)
 
@@ -396,7 +393,7 @@ Number of seconds between metrics refreshes (default: 1 if running in a console,
 ## Hush Smart Chain options:
 
 ### -ac_algo
-Choose PoW mining algorithm, default is Equihash
+Choose PoW mining algorithm, default and only algorithm is Equihash, but N/K params can be chosen.... TODO
 
 ### -ac_blocktime
 Block time in seconds, default is 60
@@ -461,20 +458,9 @@ Sapling activation block height
 ### -ac_script
 P2SH/multisig address to receive founders rewards
 
-### -ac_staked
-Percentage of blocks that are Proof-Of-Stake, default 0
-
 ### -ac_supply
 Starting supply, default is 0
 
-### -ac_timelockfrom
-Timelocked coinbase start height
-
-### -ac_timelockgte
-Timelocked coinbase minimum amount to be locked
-
-### -ac_timelockto
-Timelocked coinbase stop height
 
 ### -ac_txpow
 Enforce transaction-rate limit, default 0
